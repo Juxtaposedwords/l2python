@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 print "I wil not count my chickens:"
 
 print "Hens", 25 + 30 / 6

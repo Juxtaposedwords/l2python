@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # A coment, this is os you can ready our program later
 # Anything after the # is ignored by python
 
