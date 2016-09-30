@@ -10,8 +10,8 @@ average_passengers_per_car = passengers / cars_driven
 
 
 print "There are", cars, "cars available."
-print "There are only",""
-print "There will be",cars_not_driven, ""
-print "We can transport", carpool_capacity, " people today."
+print "There are only", drivers, "drivers available."
+print "There will be",cars_not_driven, "empty cars today."
+print "We can to transport", carpool_capacity, "people today."
 print "We have", passengers, "to carpool today."
-print "We ened ot put about", average_passengers_per_car, "in each car"
+print "We need to put about", average_passengers_per_car, "in each car"
