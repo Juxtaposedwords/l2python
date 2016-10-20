@@ -44,6 +44,5 @@ class KangarooCourt(unittest.TestCase):
         x.fastKangVel = "2"
         self.assertTrue(x.magic() == "NO")
 
-
 if __name__ == '__main__':
     unittest.main()
