@@ -2,24 +2,21 @@
 
 import sys
 class  Kang(object):
-  def magic(kx1,kv1,kx2,kv2):
-    if kv1 == kv2:
-      return "NO"
-    while kx1 > kx2 and kx1 != kx2:
-      kx1 += kv1
-      kx2 += kv2
 
-    if kx1 == kx2:
+  def __init__(self):
+    self.slowKangLoc = int()
+    self.slowKangVel = int()
+    self.fastKangLoc = int()
+    self.fastKangVel = int()
+
+  def magic(self):
+    if self.slowKangVel == self.fastKangVel:
+      return "NO"
+    while self.slowKangLoc > self.fastKangLoc and self.slowKangLoc != self.fastKangLoc:
+      self.slowKangLoc += self.slowKangVel
+      self.fastKangLoc += self.fastKangVel
+
+    if self.slowKangLoc == self.fastKangLoc:
       return "YES"
     else:
       return "NO"
-
-  def main():
-    x1,v1,x2,v2 = raw_input().strip().split(' ')
-    x1,v1,x2,v2 = [int(x1),int(v1),int(x2),int(v2)]
-
-    if v1 < v2:
-      answer = magic(x1,v1,x2,v2)
-    else:
-      answer = magic(x2,v2,x1,v1)
-    print answer
