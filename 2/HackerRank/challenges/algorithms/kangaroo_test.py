@@ -36,13 +36,6 @@ class KangarooCourt(unittest.TestCase):
         x.fastKangVel = "100000"
         self.assertTrue(x.magic() == "NO")
 
-    def test_large_loc_disparity(self):
-        x = kangaroo.Kang() 
-        x.slowKangLoc = "99999"
-        x.slowKangVel = "1"
-        x.fastKangLoc = "0"
-        x.fastKangVel = "2"
-        self.assertTrue(x.magic() == "NO")
 
 if __name__ == '__main__':
     unittest.main()
