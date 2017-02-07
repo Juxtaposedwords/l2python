@@ -1,0 +1,18 @@
+# Uncomment the variable and attack!
+def simple_boots(move):
+    if move == 'right':
+        self.moveRight()
+    elif move == 'left':
+        self.moveLeft()
+    elif move == 'up':
+        self.moveUp()
+    elif move == 'down':
+        self.moveDown()
+
+def longsword(target):
+    self.attack(target)
+
+def attackNearest():
+    enemy = self.getNearestEnemy()
+    longsword(enemy)
+    longsword(enemy)
