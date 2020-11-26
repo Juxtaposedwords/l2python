@@ -12,12 +12,12 @@ flags.mark_flag_as_required("name")
 
 def main(argv):
   del argv  # Unused.
-  hollers = salutations(FLAGS.num_times, FLAGS.name)
+  hollers = Salutations(FLAGS.num_times, FLAGS.name)
 
   for holla in hollers:
     print(holla)
 
-def salutations(count: int, name: str) -> List[str]:
+def Salutations(count: int, name: str) -> List[str]:
     output = list()
     for i in range(0, count):
         print('Hello, %s' % name)

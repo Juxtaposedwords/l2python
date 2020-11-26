@@ -6,6 +6,6 @@ py_binary(
 
 py_binary(
   name = "hello_test",
-  deps = [],
-  srcs = [":hello"],
+  deps = [":hello"],
+  srcs = ["hello_test.py"],
 )
