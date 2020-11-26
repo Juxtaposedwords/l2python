@@ -4,7 +4,7 @@ py_binary(
   srcs = ["hello.py"],
 )
 
-py_binary(
+py_test(
   name = "hello_test",
   deps = [":hello"],
   srcs = ["hello_test.py"],
