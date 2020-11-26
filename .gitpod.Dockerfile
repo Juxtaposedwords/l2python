@@ -4,7 +4,7 @@ USER root
 
 
 
-RUN apt-get update && apt-get install pkg-config zip g++ zlib1g-dev unzip python
+RUN apt-get -y update && apt-get install -y pkg-config zip g++ zlib1g-dev unzip python
 
 USER gitpod
 
