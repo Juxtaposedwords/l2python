@@ -1,7 +1,6 @@
 from typing import List
 from absl import logging
 from copy import copy
-from statistics import median_grouped
 
 
 # splitter attempts to break the list up into as equitable split as possible.
@@ -10,7 +9,8 @@ def splitter(bar: List[int], groups: int) -> List[int]:
     backwards = _split(copy(bar)[::-1], groups)
     if groups == 1:
         forward
-    elif median_grouped(forward) < median_grouped(backwards):
+    # We just want the highest low value.
+    elif min(forward) > min(backwards):
         return forward
     return backwards
 
