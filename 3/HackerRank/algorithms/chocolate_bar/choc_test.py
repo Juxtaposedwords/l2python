@@ -3,7 +3,7 @@ from absl.testing import parameterized
 from typing import Any, Dict, List
 from choc import splitter
 import sys
-#sys.tracebacklimit = 0
+sys.tracebacklimit = 0
 
 
 class UnitTests(parameterized.TestCase):
@@ -49,6 +49,14 @@ class UnitTests(parameterized.TestCase):
             }
         },
         {
+            'testcase_name': '2 groups with 4:3 split reversed',
+            'bar': [2, 1, 2, 1, 1],
+            'groups': 2,
+            'want': {
+                'value': [4, 3],
+            }
+        },
+        {
             'testcase_name': '3 groups with large diff',
             'bar': [1, 16, 2, 15, 4],
             'groups': 3,
@@ -66,4 +74,5 @@ class UnitTests(parameterized.TestCase):
 
 
 if __name__ == '__main__':
+    __unittest__ = True
     absltest.main()
