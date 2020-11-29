@@ -29,7 +29,6 @@ class UnitTests(parameterized.TestCase):
             ],
         })
     def testRotate(self, input, want):
-
         self.assertEqual(rotate_return(input), want)
 
 
