@@ -1,5 +1,5 @@
-#Problem
-You are given a choclate bar (1d list) with varying sweetnes (ints). Find the most amenable solution.
+# Problem
+You are given a choclate bar (1d list) with varying sweetnes (ints). Find the solutoin which is evenly distributed and has the highest low number.
 
 
 ## Thoughts
