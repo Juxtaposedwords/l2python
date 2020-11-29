@@ -2,10 +2,6 @@ from absl.testing import absltest
 from absl.testing import parameterized
 from rotate import rotate_return
 
-#import sys
-#sys.tracebacklimit = 0
-
-
 class UnitTests(parameterized.TestCase):
     @parameterized.named_parameters(
         {
